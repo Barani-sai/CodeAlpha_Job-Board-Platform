@@ -1,0 +1,7 @@
+<h1>{{ job.title }}</h1>
+<p>Company: {{ job.company }}</p>
+<p>Location: {{ job.location }}</p>
+<p>Salary: {{ job.salary }}</p>
+<p>{{ job.description }}</p>
+
+<a href="{% url 'apply_for_job' job.id %}">Apply for this Job</a>
